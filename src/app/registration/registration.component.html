@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="jumbotron">
+
+  <div class="row ">
+
+<div class="col-md-6 col-sm-offset-3">
+  <p>Registration</p>
+  <form [formGroup]="registerForm">
+    <div class="form-group">
+      <label> </label>
+        First Name:
+        <input type="text" formControlName="first_name" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+      <label> </label>
+        Last Name:
+        <input type="text" formControlName="last_name" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+      <label> </label>
+        User Name:
+        <input type="text" formControlName="user_name" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+      <label> </label>
+        Password:
+        <input type="text" formControlName="password" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+      <label> </label>
+        Email:
+        <input type="text" formControlName="email" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+      <label> </label>
+        Phone:
+        <input type="text" formControlName="phone" class="form-control"/>
+    </div>
+
+    <div class="form-group rtalign">
+      <button class="btn btn-primary" type="submit" [disabled]="!registerForm.valid" (click)="onsubmit()">Submit</button>
+     &nbsp;
+      <button class="btn btn-danger" (click)="onreset()">Cancel</button>
+    </div>
+
+  </form>
+</div>
+</div>
+</div>
+  </div>
